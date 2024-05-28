@@ -25,6 +25,9 @@ class MainViewModel @Inject constructor(
     private var _showErrorMessage = MutableStateFlow(false)
     val showErrorMessage = _showErrorMessage.asStateFlow()
 
+    /**
+     * Get 5-day weather data by the name of a city with a 3-hour step.
+     */
     fun refreshWeatherData(location: Location) {
         Timber.d("Refresh weather data by the name of a city")
         viewModelScope.launch {
@@ -36,6 +39,9 @@ class MainViewModel @Inject constructor(
         }
     }
 
+    /**
+     * Get 5-day weather data by the longitude and latitude of a city with a 3-hour step.
+     */
     fun refreshWeatherData(coordinates: Coordinates) {
         Timber.d("Refresh weather data by the coordinates of a city")
         viewModelScope.launch {
