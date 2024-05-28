@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listItemHeight">100dp</dimen>
+    <dimen name="weatherIconWidth">100dp</dimen>
+    <dimen name="weatherIconHeight">100dp</dimen>
+    <dimen name="cityNameInputWidth">200dp</dimen>
+    <dimen name="cityNameInputHeight">50dp</dimen>
+    <dimen name="currentLocationIconWidth">30dp</dimen>
+    <dimen name="currentLocationIconHeight">30dp</dimen>
+
+    <dimen name="errorMessageHeight">30dp</dimen>
+</resources>

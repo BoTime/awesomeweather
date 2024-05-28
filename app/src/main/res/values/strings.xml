@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Awesome Weather</string>
+    <string name="search_button">Search</string>
+    <string name="result_text_placeholder">Result</string>
+    <string name="main_fragment">Main Fragment</string>
+    <string name="weatherDescriptionTitle">Description: </string>
+    <string name="dateTimeTitle">Time: </string>
+    <string name="temperatureTitle">Temperature: </string>
+    <string name="city_name_input">Enter the city name</string>
+    <string name="error_message_city_not_found">Weather information is not found for this city</string>
+</resources>

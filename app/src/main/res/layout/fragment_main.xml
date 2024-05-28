@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/cityNameInput_editText"
+            android:layout_width="@dimen/cityNameInputWidth"
+            android:layout_height="@dimen/cityNameInputHeight"
+            android:ems="10"
+            android:hint="@string/city_name_input"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/currentLocation_imageView"
+            android:layout_width="@dimen/currentLocationIconHeight"
+            android:layout_height="@dimen/currentLocationIconWidth"
+            android:src="@drawable/current_location" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/search_button" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weatherInformation_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/errorMessage_textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/errorMessageHeight"
+        android:visibility="gone"
+        android:text="@string/error_message_city_not_found"/>
+</LinearLayout>
