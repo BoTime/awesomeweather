@@ -17,7 +17,11 @@ Unit Test: JUnit, Mockk
 4. When the app is launched, the last searched city and its weather data will be displayed.
 
 # Screenshots
-TODO: 
+![Search by city name](./screenshots/search-by-city-name.png)
+
+![City not found](./screenshots/city-not-found.png)
+
+![Request Permissions](./screenshots/request-permissions.png)
 
 # Future Improvements
 1. Given more time, we can implement autocomplete when a customer enters the city name for a better user experience.
